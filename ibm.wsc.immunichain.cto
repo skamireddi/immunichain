@@ -1,0 +1,75 @@
+/* Immunization definitions */
+
+namespace ibm.wsc.immunichain
+
+participant Guardian identified by gid {
+	o String gid
+	o String name
+}
+
+participant MedProvider identified by medid {
+	o String medid
+	o String name
+}
+
+participant Member identified by memid {
+	o String memid
+	o String name
+}
+
+abstract concept immunization {
+	o String name
+	o String provider
+	o String imdate
+}
+
+concept immunirecord extends immunization {}
+
+asset Childform identified by cid {
+	o String cid
+	o String name
+	o String address
+	--> Guardian guardian
+	o String dob
+	--> MedProvider [] medproviders optional
+	--> Member [] members optional
+	o  immunirecord [] immunizations optional
+}
+ 
+transaction assignMedProvider {
+	--> Guardian guardian
+	--> MedProvider medprovider
+	--> Childform childform
+}
+
+transaction authMember {
+	--> Guardian guardian
+	--> Member member
+	--> Childform childform
+}
+
+transaction removeMemberAuth {
+	--> Guardian guardian
+	--> Member member
+	--> Childform childform
+}
+
+transaction addImmunizations {
+	o immunirecord [] vaccines
+	--> Childform childform
+}
+
+transaction updateChildForm {
+	o String name optional
+	o String address optional
+	--> Childform childform
+}
+
+transaction reassignGuardian {
+  	--> Guardian oldguardian
+    --> Guardian newguardian
+	--> Childform childform
+}
+
+
+

@@ -1,6 +1,3 @@
-/**
- * Sample access control list.
- */
 rule Default {
     description: "Allow all participants access to all resources"
     participant: "ANY"
