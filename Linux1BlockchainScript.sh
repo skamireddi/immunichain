@@ -83,13 +83,13 @@ npm config set prefix '/data/npm'
 npm config set cache /data/linux1/.npm
 export PATH=/data/npm/bin:$PATH
 cd /data/linux1/
-npm install -g composer-cli@0.9.2
+npm install -g composer-cli
 
 echo -e “*** Installing Hyperledger Composer rest server. ***\n”
-npm install -g composer-rest-server@0.9.2
+npm install -g composer-rest-server
 
 echo -e “*** Installing Hyperledger Composer playground. ***\n”
-npm install -g composer-playground@0.9.2
+npm install -g composer-playground
 
 echo -e "*** Clone and install the Coposer Tools repository.***\n"
 git clone https://github.com/hyperledger/composer-tools
