@@ -1,5 +1,56 @@
 #!/bin/bash
 
+# Sanity checks
+relog=false
+# Check for docker group
+if ! $( id -Gn | grep -wq docker ); then
+  sudo usermod -aG docker linux1
+  echo "ID linux1 was not a member of the docker group. This has been corrected."
+  relog=true
+fi
+# Check PATH for /data/npm/bin
+if ! $( echo $PATH | grep -q /data/npm/bin ); then
+  echo "export PATH=/data/npm/bin:$PATH" >> $HOME/.profile
+  echo "PATH was missing '/data/npm/bin'. This has been corrected."
+  relog=true
+fi
+# Relog needed?
+if [[ "$relog" = true ]]; then
+  echo "Some changes have been made that require you to log out and log back in."
+  echo "Please do this now and then re-run this script."
+  exit 1
+fi
+# Ensure /data exists
+if [[ ! -d "/data" ]]; then
+  echo "/data disk is missing. Please wait a moment and try again!"
+  exit 2
+fi
+# END Sanity checks
+
+printf "
+IBM Master the Mainframe
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::''  ''::'      '::::::  ::::::::::::::'.:::::::::::::::
+:::::::::' :. :  :         :::: :  :::::::::::.:::':::::::::::::::
+::::::::::  :   :::.       ::: M :::::::..::::'     :::: : :::::::
+::::::::    :':  '::'     '' M   M :::::: :'           '' ':::::::
+:'        : '   :  ::    . M       M   '                        .:
+:               :  .:: . M           M                         :::
+:. .,.        :::  ':: M M M       M M M                 .:...::::
+:::::::.      '      M   M   M   M   M   M               :: :::::.
+::::::::           M     M     M     M     M   '    '   .:::::::::
+::::::::.        ::: M   M           M   M :         ''' :::::::::
+::::::::::      :::::: M M           M M             :::::::::::::
+: .::::::::.   .:''::::: M           M   ::   :   '::.::::::::::::
+:::::::::::::::. '  '::::: M       M   :::::.:.:.:.:.:::::::::::::
+:::::::::::::::: :     ':::: M   M  ' ,:::::::::: : :.:'::::::::::
+::::::::::::::::: '     :::::: M    . :'::::::::::::::' ':::::::::
+::::::::::::::::::''   :::::::: : :' : ,:::vem:::::'      ':::::::
+:::::::::::::::::'   .::::::::::::  ::::::::::::::::       :::::::
+:::::::::::::::::. .::::::::::::::::::::::::::::::::::::.'::::::::
+IBM Master the Mainframe
+"
+
 
 #Install NodeJS
 echo -e “*** install_nodejs ***”
@@ -32,13 +83,13 @@ npm config set prefix '/data/npm'
 npm config set cache /data/linux1/.npm
 export PATH=/data/npm/bin:$PATH
 cd /data/linux1/
-npm install -g composer-cli
+npm install -g composer-cli@0.9.2
 
 echo -e “*** Installing Hyperledger Composer rest server. ***\n”
-npm install -g composer-rest-server
+npm install -g composer-rest-server@0.9.2
 
 echo -e “*** Installing Hyperledger Composer playground. ***\n”
-npm install -g composer-playground
+npm install -g composer-playground@0.9.2
 
 echo -e "*** Clone and install the Coposer Tools repository.***\n"
 git clone https://github.com/hyperledger/composer-tools
@@ -66,3 +117,11 @@ sudo iptables-save > /etc/linuxone/iptables.save
 echo -e "*** Installing NodeRed. ***\n"
 npm install -g node-red
 nohup node-red >/data/playground/nodered.stdout 2>/data/playground/nodered.stderr & disown
+
+# Persist PATH setting
+echo "export PATH=/data/npm/bin:$PATH" >> $HOME/.profile
+
+# Persist docker group addition
+sudo usermod -aG docker linux1
+
+echo "Please log out of this system and log back in to pick up the group and PATH changes."
