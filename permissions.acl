@@ -1,7 +1,10 @@
-rule Default {
-    description: "Allow all participants access to all resources"
-    participant: "ANY"
-    operation: ALL
-    resource: "ibm.wsc.immunichain**"
-    action: ALLOW
-}
+/**
+ * New access control file
+ */
+ rule AllAccess {
+     description: "AllAccess - grant everything to everybody."
+     participant: "org.hyperledger.composer.system.Participant"
+     operation: ALL
+     resource: "org.hyperledger.composer.system.**"
+     action: ALLOW
+ }
