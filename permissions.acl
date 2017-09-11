@@ -2,6 +2,6 @@ rule Default {
     description: "Allow all participants access to all resources"
     participant: "ANY"
     operation: ALL
-    resource: "ibm.wsc.immunichain"
+    resource: "ibm.wsc.immunichain**"
     action: ALLOW
 }
