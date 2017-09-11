@@ -33,7 +33,7 @@ asset Childform identified by cid {
 	o String dob
 	--> MedProvider [] medproviders optional
 	--> Member [] members optional
-	o  immunirecord [] immunizations optional
+	o immunirecord [] immunizations default='[ { "name" : "default", "provider" : "default", "imdate" : "mm/dd/yy" } ] ' 
 }
  
 transaction assignMedProvider {
