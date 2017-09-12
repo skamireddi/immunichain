@@ -5,7 +5,7 @@ Immunichain Blockchain Lab
 Before we get Started
 =====================
 
-Go to github.com/grice32/immunchain and download the contents. You will use these files throughout the lab. 
+Go to github.com/grice32/immunichain and download the contents. You will use these files throughout the lab. 
 
 Part 1: Starting and Creating Your Hyperledger Composer Network
 ===============================================================
