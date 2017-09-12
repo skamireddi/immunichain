@@ -2,6 +2,11 @@ Immunichain Blockchain Lab
 ==========================
 
 
+Before we get Started
+=====================
+
+Go to github.com/grice/immunchain and download the contents. You will use these files throughout the lab. 
+
 Part 1: Starting and Creating Your Hyperledger Composer Network
 ===============================================================
 
@@ -25,7 +30,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/27.png
 
-5. Afterwards, you can play with some of the other sample business network applications, like animal tracking or vehicle lifecycles. 
+5. After this lab, you can play with some of the other sample business network applications, like animal tracking or vehicle lifecycles. 
 
 6. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. You will see later how easy it is. Click on ‘Connect now’ in order to get connected to your Immunichain network.
 
@@ -35,7 +40,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/29.png
 
-8. Now drop in your .cto file. Click on Add once it has loaded. You will now do this for you .js and .acl files as well. 
+8. Go to the directory where you saved the Github. Now drop in the .cto file. Click on Add once it has loaded. You will now do this for you .js and .acl files as well. 
 
 .. image:: Images/30.png
 
