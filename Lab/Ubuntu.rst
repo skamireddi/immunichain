@@ -4,49 +4,51 @@ Immunichain Blockchain Lab
 Part 1: Getting Your Linux Guest Ready for Composer Playground
 ==============================================================
 
-The previous part got you ready for Hyperledger Playground from the perspective of creating your LinuxONE CC Instance. This part will now get you ready from the perspective of your active Linux guest. Don’t worry, this part is extremely short!
+There is either a peice of paper in front of you or I wrote down the IP Addresses on the white board, but you should have your IP Address. You are connected to an Ubuntu guest that is running on a z13 in the Washington System Center. 
 
-1. Run this command git clone https://github.com/grice32/immunichain from within your Linux guest
+1. Connect to your Linux guest either through PuTTy or a simple terminal in a Mac. I will be using a Mac throughout this lab. The commands should be the same. 
+
+2. Run this command git clone https://github.com/grice32/immunichain from within your Linux guest
 
 .. image:: Images/18.png
 
-2. Change directories to immunichain by cd immunichain/ then enter ls to confirm that there is a Linux1BlockchainScript.sh file there
+3. Change directories to immunichain by cd immunichain/ then enter ls to confirm that there is a Linux1BlockchainScript.sh file there
 
 .. image:: Images/19.png
 
-3. Make the file executable by entering chmod u+x Linux1BlockchainScript.sh
+4. Make the file executable by entering chmod u+x Linux1BlockchainScript.sh
 
-4. Enter ls again to see the file again
+5. Enter ls again to see the file again
 
 .. image:: Images/20.png
 
-5. Copy the Linux1BlockchainScript.sh from the immunichain directory to your home/linux1 directory cp Linux1BlockchainScript.sh /home/linux1/
+6. Copy the Linux1BlockchainScript.sh from the immunichain directory to your home/linux1 directory cp Linux1BlockchainScript.sh /home/linux1/
 
 .. image:: Images/21.png
 
-6. Return back one directory cd .. and enter df –h if you do not see “/data” in the mounted column, wait a few moments before going onto the next step
+7. Return back one directory cd .. and enter df –h if you do not see “/data” in the mounted column, wait a few moments before going onto the next step
 
-7. Once you have /data, run the file by entering ./Linux1BlockchainScript.sh – Be patient, this script will take 7 to 10 minutes to run. If it doesn’t want to run, you might need to exit out of your Linux guest and sign back in. 
+8. Once you have /data, run the file by entering ./Linux1BlockchainScript.sh – Be patient, this script will take 7 to 10 minutes to run. If it doesn’t want to run, you might need to exit out of your Linux guest and sign back in. 
 
 .. image:: Images/22.png
 
-8. The first time you run the script you will need to exit in order for some permissions and environment variables to take effect. You can do this by entering exit once you get your command line back
+9. The first time you run the script you will need to exit in order for some permissions and environment variables to take effect. You can do this by entering exit once you get your command line back
 
-9. While you are exited from you Linux guest, clone the same git from above git clone https://github.com/grice32/immunichain - You will use certain files later on in the lab
+10. While you are exited from you Linux guest, clone the same git from above git clone https://github.com/grice32/immunichain - You will use certain files later on in the lab
 
 .. image:: Images/23.png
 
-10. Now you can log back into your Linux guest by either entering ssh linux1@xxx.xxx.x.xx or ssh –i keyname.pem linux1@xxx.xxx.x.xx - If you do the second option, you have to be within your directory where you saved your keys
+11. Now you can log back into your Linux guest by either entering ssh linux1@xxx.xxx.x.xx or ssh –i keyname.pem linux1@xxx.xxx.x.xx - If you do the second option, you have to be within your directory where you saved your keys
 
 	The xxx.xxx.x.xx refer to your LinuxONE CC OP Address
 	The keyname.pem refers to the name you gave your keys
 
-11. Now, verify that you have a running Hyperledger Fabric and Composer network by entering docker ps –a
+12. Now, verify that you have a running Hyperledger Fabric and Composer network by entering docker ps –a
 
-12. Also, verify that you have Composer Playground running by entering 
+13. Also, verify that you have Composer Playground running by entering 
 ps -ef|grep playground
 
-Congratulations if you just did all of this successfully. You just did the hard part. In next section we will start with the Immunichain 
+Congratulations if you just did all of this successfully. You just did the hard part. In next section we will get started with the Immunichain 
 
 **What you just accomplished:**
 
