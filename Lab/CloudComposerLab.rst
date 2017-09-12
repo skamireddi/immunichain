@@ -2,7 +2,7 @@ Immunichain Blockchain Lab
 ==========================
 
 
-Part 1: Starting and Creating Your Hyperledger Composer Network
+**Part 1: Starting and Creating Your Hyperledger Composer Network**
 
 1. Go to your browser and go to https://composer-playground.mybluemix.net/
 
@@ -38,7 +38,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 
 
-What did you just accomplish?
+**What did you just accomplish?**
 
 You started you Hyperledger Composer Playground
 You started with a blank business network
@@ -64,7 +64,7 @@ You added Immunichain files to your business network
 
 
 
-Part 2: Creating Assets and Participants
+**Part 2: Creating Assets and Participants**
 
 1. Now that you have an Immunichain Business Network, jump over to the Test section of the Composer Playground. The test area allows you to create assets, participants and submit transactions against your assets and participants. Your screen should look like this: 
 
@@ -103,7 +103,7 @@ Before we create assets and participants, we need to know what each asset and pa
 8. Go ahead and create more medical providers, members, guardians and children. Just to remember to write down the ID numbers. This will make more sense when we submit transactions. 
 
 
-What did you just accomplish?
+**What did you just accomplish?**
 You created assets and participants within the Composer Playground
 Hopefully, you also wrote down the various ID numbers
 
@@ -141,7 +141,7 @@ Hopefully, you also wrote down the various ID numbers
 
 
 
-Part 3: Creating and Switching to Different Identities 
+**Part 3: Creating and Switching to Different Identities** 
 
 A few weeks ago, Hyperledger Composer updated their service to version 0.12.0. It included a way to toggle between identities and Fabrics rapidly. This is really great to get the sense of how valuable Blockchain is. You will get an even better sense when we jump to the Immunichain website later on in the lab. 
 
@@ -199,7 +199,7 @@ Why do you think you couldn’t successfully create a member? When designing thi
 
 14. Jump back over to the admin identity. There we have authorization to create participants and submit transactions. 
 
-What did you just accomplish?
+**What did you just accomplish?**
 
 You created various identities for the participants you have created in Composer 
 You tried to create additional participants from those identities
@@ -216,7 +216,7 @@ You learned why you couldn’t do that
 
 
 
-Part 4: Submitting Transactions
+**Part 4: Submitting Transactions**
 
 1. Make sure you are connected back to the admin identity. You know by noticing the name in the top right of the screen. 
 
@@ -278,14 +278,14 @@ My transaction says let member #1 (Fairmont High School Athletics) have Child #2
 
 16. Continue to make various transactions that you want. 
 
-What did you just accomplish?
+**What did you just accomplish?**
 
 You submitted transactions against participants within Composer
 You understand the value of authorizing members 
 You added Immunizations to your child
 
 
-Part 5: Production Immunichain
+**Part 5: Production Immunichain**
 
 1. Open up Google Chrome. Immunichain doesn’t work too well in Firefox. It does work in Firefox, but Google Chrome works the best. 
 
