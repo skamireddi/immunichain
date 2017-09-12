@@ -6,62 +6,92 @@ Part 1: Setting Up Your LinuxONE Community Cloud Account
 
 1.  From your browser, go to https://developer.ibm.com/linuxone/
 
-.. image:: Images
+.. image:: Images/1.png
 
-2. Click on ‘Start your trial now’
+2. Click on Start your trial now
 
-3. Complete the required fields, once filled in click on ‘Request your trial’
+.. image:: Images/2.png
 
-4. Then click on sign on
+3. Complete the required fields, once filled in click on Request your trial
 
-5. You will receive an email containing your User ID and password. Follow the link to the LinuxONE CC
+.. image:: Images/3.png
 
-6. You’ll be the website asking for your User ID and Password. Enter your credentials and click on ‘Sign in’
+.. image:: Images/4.png
 
-7. You’ll now be on the LinuxONE CC Home Page. Click on the ‘Manage Instances’ under the Infrastructure section
+4. You will receive an email containing your User ID and password. Follow the link to the LinuxONE CC
 
-8. Click on ‘Create’
+.. image:: Images/5.png
 
-9. Enter the correct information:
+5. You’ll be the website asking you for your User ID and Password. Enter your credentials and click on Sign in
+
+.. image:: Images/6.png
+
+6. You’ll now be on the LinuxONE CC Home Page. Click on the Manage Instances under the Infrastructure section
+
+.. image:: Images/7.png
+
+7. Click on Create
+
+.. image:: Images/8.png
+
+8. Enter the correct information:
 	
-	Type: General Purpose VM
-	Instance Name: Immunichain
-	Instance Description: (whatever you might like)
- 	Image: SLES12 SP2
-	Flavor: LinuxONE-Medium
+	- Type: General Purpose VM
+	- Instance Name: Immunichain
+	- Instance Description: (whatever you might like)
+ 	- Image: SLES12 SP2
+	- Flavor: LinuxONE-Medium
+	
+.. image:: Images/9.png	
 
-10. Under the SSH Key Pair section, click on ‘Create’
+9. Under the SSH Key Pair section, click on Create
 
-11. In the pop-up box, enter a name you would like to give your keys. Then click on ‘Create a new key pair’
+.. image:: Images/10.png
 
-12. You will then be prompted to save the fille (keys). Click on ‘Save File.’ If you didn’t get prompted, it might of automatically download to your folders
+10. In the pop-up box, enter a name you would like to give your keys. Then click on Create a new key pair
 
-13. Back on the LinuxONE CC, select your new keys in the SSH Key Pair section
+.. image:: Images/11.png
 
-14. Review all the selections you selected and click on ‘Create’
+11. You will then be prompted to save the fille (keys). Click on Save File. If you didn’t get prompted, it might of automatically download to your folders
 
-15. You will see the Instance starting up. Once it says ‘ACTIVE’ in the status column, note your IP Address. It might be best to write down your IP Address. You can always toggle between your terminal and the LinuxONE CC website. 
+.. image:: Images/12.png
 
- 16. You can just ssh linux1@xxx.xxx.x.xx to connect to your Linux guest. If that doesn’t work jump to the next step
+12. Back on the LinuxONE CC, select your new keys in the SSH Key Pair section
 
-17. From your terminal, navigate to where you downloaded your keys
+.. image:: Images/13.png
 
-18. Modify the permissions of your private key by entering cmod 600 keyname.pem
+13. Review all the selections you selected and click on Create
+
+.. image:: Images/14.png
+
+14. You will see the Instance starting up. Once it says ACTIVE in the status column, note your IP Address. It might be best to write down your IP Address. You can always toggle between your terminal and the LinuxONE CC website. 
+
+.. image:: Images/15.png
+
+15. You can just ssh linux1@xxx.xxx.x.xx to connect to your Linux guest. If it works, jump to step 21. If that doesn’t work jump to the next step
+
+16. From your terminal, navigate to where you downloaded your keys
+
+17. Modify the permissions of your private key by entering cmod 600 keyname.pem
 	
 	keyname refers to what you named your keys
 
-19. From the path where your keys are located enter ssh –i keyname.pem linux1@xxx.xxx.x.xx 
+20. From the path where your keys are located enter ssh –i keyname.pem linux1@xxx.xxx.x.xx 
 
 	xxx.xxx.x.xx refers to your LinuxONE CC IP Address
 
-20. Type yes when you are prompted to continue connecting to your instance
+21. Type yes when you are prompted to continue connecting to your instance
 
-21. You are now connected to your LinuxONE CC instance! 
+.. image:: Images/16.png
+
+22. You are now connected to your LinuxONE CC instance! 
+
+.. image:: Images/17.png
 
 
 Why stop now, we are just now having fun! Continue to the next part. 
 
-What you just accomplished:
+**What you just accomplished:**
 
 You created and got into your LinuxONE CC instance. Also, you generated new keys. Don’t ask me about my terrible key experience. No, I didn’t lose millions in Bitcoin. Anyways, you just set yourself up for success for the rest of the lab. 
 
@@ -70,26 +100,39 @@ You created and got into your LinuxONE CC instance. Also, you generated new keys
 
 
 Part 2: Getting Your Linux Guest Ready for Composer Playground
+==============================================================
 
 The previous part got you ready for Hyperledger Playground from the perspective of creating your LinuxONE CC Instance. This part will now get you ready from the perspective of your active Linux guest. Don’t worry, this part is extremely short!
 
 1. Run this command git clone https://github.com/grice32/immunichain from within your Linux guest
 
+.. image:: Images/18.png
+
 2. Change directories to immunichain by cd immunichain/ then enter ls to confirm that there is a Linux1BlockchainScript.sh file there
+
+.. image:: Images/19.png
 
 3. Make the file executable by entering chmod u+x Linux1BlockchainScript.sh
 
 4. Enter ls again to see the file again
 
+.. image:: Images/20.png
+
 5. Copy the Linux1BlockchainScript.sh from the immunichain directory to your home/linux1 directory cp Linux1BlockchainScript.sh /home/linux1/
+
+.. image:: Images/21.png
 
 6. Return back one directory cd .. and enter df –h if you do not see “/data” in the mounted column, wait a few moments before going onto the next step
 
-7. Now, run the file by entering ./Linux1BlockchainScript.sh – Be patient, this script will take 7 to 10 minutes to run. If it doesn’t want to run, you might need to exit out of your Linux guest and sign back in. 
+7. Once you have /data, run the file by entering ./Linux1BlockchainScript.sh – Be patient, this script will take 7 to 10 minutes to run. If it doesn’t want to run, you might need to exit out of your Linux guest and sign back in. 
+
+.. image:: Images/22.png
 
 8. The first time you run the script you will need to exit in order for some permissions and environment variables to take effect. You can do this by entering exit once you get your command line back
 
 9. While you are exited from you Linux guest, clone the same git from above git clone https://github.com/grice32/immunichain - You will use certain files later on in the lab
+
+.. image:: Images/23.png
 
 10. Now you can log back into your Linux guest by either entering ssh linux1@xxx.xxx.x.xx or ssh –i keyname.pem linux1@xxx.xxx.x.xx - If you do the second option, you have to be within your directory where you saved your keys
 
@@ -105,9 +148,7 @@ Congratulations if you just did all of this successfully. You just did the hard 
 
 **What you just accomplished:**
 
-You cloned a github repository in order to get the required files needed
-You ran the Linux1BlockchainScript.sh script in order to download more required software, like Hyperledger Composer
-You then verified that you had a running Hyperledger Fabric and Composer Playground
+You cloned a github repository in order to get the required files needed. Then you ran the Linux1BlockchainScript.sh script in order to download more required software, like Hyperledger Composer and the REST server. You then verified that you had a running Hyperledger Fabric and Composer Playground by checking your Docker images.
 
 
 
@@ -121,6 +162,8 @@ Part 3: Starting and Creating Your Hyperledger Composer Network
 	Composer Playground works best in Chrome and even better in Incognito 
 	If you run it in Firefox, you cannot run it in a Private Window
 	I have always used Firefox without hiccups.
+	
+.. image:: Images/24.png
 
 2. You will get a Welcome pop-up box with a graphic and a few words. Click on Let’s Blockchain
 
@@ -424,97 +467,123 @@ Part 5: Production Immunichain
 
 You went to the Immunichain website and create various accounts. You added Member Organizations, Healthcare Providers, Guardians and Children. Then you then added immunizations from the Healthcare Provider account to the child. Then you viewed the health record of the Child from the Member's perspective. 
   
-Part 8: Connecting Composer to a Fabric
 
-First, you can only do this if you are on a LinuzOne Community Cloud instance or on a local machine. You cannot do this from the Cloud Hyperledger Composer Playground. 
+
+Part 8: Connecting Composer to a Fabric
+=======================================
+
+First, you can only do this if you are on a LinuxOne Community Cloud instance or on a local machine. You cannot do this from the Cloud Hyperledger Composer Playground. 
 
 1. From the admin view in Composer, click on Log Out in the top right
 
+.. image:: Images/76.png
+
 2. Then click on Create ID Card in the top right
+
+.. image:: Images/77.png
 
 3. Select the Hyperledger Fabric v1.0 option and click on Next
 
+.. image:: Images/78.png
+
 4. Create the Profile Name you want and add a description you want. 
+
+.. image:: Images/79.png
 
 5. Scroll to the bottom and change the Key Value Directory Path to /home/linux1 and click on Save
 
+.. image:: Images/80.png
+
 6. You will then be sent to another screen. The Enrollment ID will be admin and the Enrollment Secret will be adminpw. Then give your Business Network a name. Make sure you observe whether you use upper case or lower case. The click on Create. 
+
+.. image:: Images/81.png
 
 7. You will be then taken back to your Wallet page. Notice how there is now a card at the bottom. That is what you just created. 
 
 8. Scroll down and then click on Connect Now. Notice how you receive an error? Why do you think that is so? We have more work to do before it will work. 
 
+.. image:: Images/82.png
+
 9. Now open your terminal change directories where you immunichain.bna file is stored on your local machine. Do a secure copy of the immunichain.bna file. scp immunichain.bna linux1@xxx.xxx.x.xxx:~/
 
 Replace the xxx.xxx.x.xxx with you LinuxONE CC IP Address.
+
+.. image:: Images/83.png
 
 10. Now, log into your LinuxONE CC instance.
 
 11. Enter this command to connect your command line to the fabric you just created in step 6. composer network deploy -a immunichain.bna -p hlfv1 -i PeerAdmin -s anything - This connects the playground Fabric to actually having a Fabric in your command line. If you see, Command Succeeded, that’s a very good sign.
 
+.. image:: Images/85.png
+
 13. Now go back to the Composer Playground and try Connect Now this time around. 
+
+.. image:: Images/84.png
 
 12. Now run composer network list -n immunichain -p hlfv1 -i admin -s adminpw to see all the participants and assets you have created. 
 
-What did you just accomplish?
+.. image:: Images/97.png
+
+**What did you just accomplish?**
 
 You exported your Composer Playground and connected it to a Hyperledger Fabric. Then you deployed the Fabric. Then you ran a command to find out the amount and which participants you have. 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Part 9: Connecting Your Immunichain to a REST Server
+====================================================
 
 1. In your terminal do which composer-rest-server
 
 2. Then enter composer-rest-server -p immunichain -n immunichain -i admin -s adminpw -N always
 
+.. image:: Images/88.png
+
 3. Then go your web browser and enter your xxx.xxx.x.xxx:3000/explorer. Replace the xxx.xxx.x.xxx with your IP Address.
+
+.. image:: Images/89.png
 
 4. Then go click on ibm_wsc_immunichain_MedProvider
 
+.. image:: Images/90.png
+
 5. Select POST and click on the light brown box in the bottom right. That will place that code in the white box in the bottom left. 
 
+.. image:: Images/91.png
+
 6. Make appropriate changes that you see in the picture below.
+
+.. image:: Images/92.png
 
 7. Click on Try it out! 
 
 8. Scroll down and look at the response code. If you get Response Code: 200 that is very good. That means it was added as a Medical Provider.
 
+.. image:: Images/93.png
+
 9.  To test this out scroll back up and click on GET.
 
 10. Once GET has loaded, click on Try it out! Scroll down and you will now see Aetna as a Medical Provider.
+
+.. image:: Images/94.png
 
 11. Let’s try adding a Member. Click on ibm_wsc_immunichain_Member and then POST.
 
 12. Change the syntax to replicate what is in the picture below and then click on Try it out!
 
+.. image:: Images/95.png
+
 13. Scroll back up to GET within the Member and click on Try it out!
 
 14. Now, you receive a very similar as to what is below.
 
+.. image:: Images/98.png
+
 15. Go ahead and add a few other participants and assets through the REST server. I don’t recommend working with the transactions, but rather stick to Participants and Assets. If you are confused on what the expected syntax is, go back into the Composer Playground and add a participant. Then go back into the REST server with the correct expected syntax. 
 
-What did you just accomplish?
+**What did you just accomplish?**
 
 You started the Composure REST server that makes up the Immunichain Network. Then you added a few participants and assets from the REST server and tested it to verify that it successfully worked. 
 
 End of Lab!
+===========
