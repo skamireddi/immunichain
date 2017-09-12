@@ -71,7 +71,7 @@ You added Immunichain files to your business network
 
 
 Before we create assets and participants, we need to know what each asset and participants represent. 
-	- Guardian can be obvious, but you are creating a parent
+	- Guardian is obvious, but you are creating a parent
 	- MedProvider is simply a medical provider, like a doctor
 	- Member is who an organization who can view the health record
 	- Childform is simply the child
