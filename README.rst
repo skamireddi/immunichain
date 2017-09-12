@@ -16,7 +16,7 @@ The Hyperledger Composer Playground is way to produce Blockchain applications qu
 
 **Instructions on Getting Started**
 
-- If you are going to use Hyperledger Commposer Cloud from Bluemix, go into the Lab folder and use the CloudComposer.rst file
+- If you are going to use Hyperledger Commposer Cloud from Bluemix, go into the Lab folder and use the CloudComposerLab.rst file
 - If you are going to use Hyperledger Composer from the LinuxONE Community Cloud Instance, go into the lab folder and use the Linux1CC.rst file
 - If you are going to use Hyperledger Composer from an Ubuntu guest, go into the Lab folder and use Ubuntu.rst file
 
