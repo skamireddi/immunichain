@@ -14,6 +14,8 @@ Immunichain Blockchain Lab
 
 2. You will get a Welcome pop-up box with a graphic and a few words. Click on ‘Let’s Blockchain’
 
+.. image:: images/25.png
+
 3. Then you will be in the Composer Playground Homepage. Click on ‘Deploy a Business Network.’
 
 
