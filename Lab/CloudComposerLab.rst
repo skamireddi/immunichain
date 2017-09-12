@@ -104,6 +104,7 @@ Before we create assets and participants, we need to know what each asset and pa
 
 
 **What did you just accomplish?**
+
 You created assets and participants within the Composer Playground
 Hopefully, you also wrote down the various ID numbers
 
@@ -365,7 +366,7 @@ You added Immunizations to your child
 
 23. Continue to make various accounts and updating your children that you create. 
 
-What did you just accomplish?
+**What did you just accomplish?**
 
 You went to the Immunichain website and create various accounts
 You added Member Organizations, Healthcare Providers, Guardians and Children
