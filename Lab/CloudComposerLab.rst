@@ -7,8 +7,8 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 1. Go to your browser and go to https://composer-playground.mybluemix.net/
 
-	Composer Playground works best in Chrome and even better in Incognito 
-	If you run it in Firefox, you cannot run it in a Private Window
+	Composer Playground works best in Chrome and even better in Incognito. 
+	If you run it in Firefox, you cannot run it in a Private Window.
 	I have always used Firefox without hiccups
 
 
