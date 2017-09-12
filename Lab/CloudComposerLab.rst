@@ -71,10 +71,10 @@ You added Immunichain files to your business network
 
 
 Before we create assets and participants, we need to know what each asset and participants represent. 
-	- Guardian is obvious, but you are creating a parent
-	- MedProvider is simply a medical provider, like a doctor
-	- Member is who an organization who can view the health record
-	- Childform is simply the child
+#	 Guardian is obvious, but you are creating a parent
+#	 MedProvider is simply a medical provider, like a doctor
+#	 Member is who an organization who can view the health record
+#	 Childform is simply the child
 
 2. Now create a Medical Provider by clicking on the Medical Provider on the right and ‘+Create New Participant’ in the top right. Give it Medical Provider serial number. I stick to 1, 2, 3 or low numbers that you can remember, but you can create any ID number you want. I suggest writing your ID numbers down as we move along. Once you have filled in the information click on ‘Create.’
 
