@@ -50,9 +50,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 **What did you just accomplish?**
 
-You started you Hyperledger Composer Playground
-You started with a blank business network
-You added Immunichain files to your business network
+You started you Hyperledger Composer Playground. At first you started with a blank business network, but then you added Immunichain files to your business network.
 
 
 
@@ -99,8 +97,7 @@ Before we create assets and participants, we need to know what each asset and pa
 
 **What did you just accomplish?**
 
-You created assets and participants within the Composer Playground
-Hopefully, you also wrote down the various ID numbers
+You created assets and participants within the Composer Playground. Additionally, I hope you also wrote down the various ID numbers. We are going to need them throughout the lab. 
 
 
 
@@ -165,9 +162,7 @@ Why do you think you couldn’t successfully create a member? When designing thi
 
 **What did you just accomplish?**
 
-You created various identities for the participants you have created in Composer 
-You tried to create additional participants from those identities
-You learned why you couldn’t do that
+You created various identities for the participants you have created in Composer. Then you created additional participants from those identities. For a good reason, you learned why you couldn’t do that.
 
 
 
@@ -236,9 +231,7 @@ My transaction says let member #1 (Fairmont High School Athletics) have Child #2
 
 **What did you just accomplish?**
 
-You submitted transactions against participants within Composer
-You understand the value of authorizing members 
-You added Immunizations to your child
+You submitted transactions against participants within Composer. Hopefully, you now understand the value of authorizing members. Also, you added Immunizations to your child, which is the a pillar of Immunichain.
 
 
 
@@ -325,10 +318,7 @@ Part 5: Production Immunichain
 
 **What did you just accomplish?**
 
-You went to the Immunichain website and create various accounts
-You added Member Organizations, Healthcare Providers, Guardians and Children
-You then added immunizations from the Healthcare Provider account
-You viewed the health record of the Child to gather information.   
+You went to the Immunichain website and create various accounts. You added Member Organizations, Healthcare Providers, Guardians and Children. Then you then added immunizations from the Healthcare Provider account to the child. Then you viewed the health record of the Child from the Member's perspective. 
 
 End of Lab!
 ===========
