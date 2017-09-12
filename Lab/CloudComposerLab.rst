@@ -18,11 +18,11 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 
 
-2. You will get a Welcome pop-up box with a graphic and a few words. Click on ‘Let’s Blockchain’
+2. You will get a Welcome pop-up box with a graphic and a few words. Click on Let’s Blockchain
 
 .. image:: Images/25.png
 
-3. Then you will be in the Composer Playground Homepage. Click on ‘Deploy a Business Network.’
+3. Then you will be in the Composer Playground Homepage. Click on Deploy a Business Network.
 
 .. image:: Images/26.png
 
@@ -32,7 +32,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 5. After this lab, you can play with some of the other sample business network applications, like animal tracking or vehicle lifecycles. 
 
-6. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. You will see later how easy it is. Click on ‘Connect now’ in order to get connected to your Immunichain network.
+6. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. You will see later how easy it is. Click on Connect now in order to get connected to your Immunichain network.
 
 .. image:: Images/28.png
 
@@ -44,7 +44,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/30.png
 
-9. After you have done that, your screen should look like this. If it does, click on each file and select ‘Update.’
+9. After you have done that, your screen should look like this. If it does, click on each file and select Update.
 
 .. image:: Images/31.png
 
@@ -70,7 +70,7 @@ Before we create assets and participants, we need to know what each asset and pa
 	 - Member is who an organization who can view the health record
 	 - Childform is simply the child
 
-2. Now create a Medical Provider by clicking on the Medical Provider on the right and ‘+Create New Participant’ in the top right. Give it Medical Provider serial number. I stick to 1, 2, 3 or low numbers that you can remember, but you can create any ID number you want. I suggest writing your ID numbers down as we move along. Once you have filled in the information click on ‘Create.’
+2. Now create a Medical Provider by clicking on the Medical Provider on the right and +Create New Participant in the top right. Give it Medical Provider serial number. I stick to 1, 2, 3 or low numbers that I can remember, but you can create any ID number you want. I suggest writing your ID numbers down as we move along. Once you have filled in the information click on Create.
 
 .. image:: Images/32.png
 
@@ -119,11 +119,11 @@ A few weeks ago, Hyperledger Composer updated their service to version 0.12.0. I
 
 3. Now, click on + Issue New ID. A pop-up will come to the top and ask for an ID Name and Participant
 
-4. Now, try creating a new identity (outside of Composer, I wouldn’t recommend trying to create a new identity) with the name Aetna. For the participant just type in the number 1 and see what pops down. Your smart enough to know that Aetna is a Medical Provider. 
+4. Now, try creating a new identity (outside of Composer, I wouldn’t recommend trying to create a new identity) with the name of Aetna. For the participant just type in the number 1 or the ID Number you gave your participants and see what pops down.
 
 .. image:: Images/40.png
 
-5. Click on Create New and you now have created a new identity
+5. Click on Create New and you have now created a new identity
 
 6. Then another pop-up will appear. For the most part, you can ignore the top portion of that pop-up. As far as the bottom part, click on + Add to my Wallet
 
@@ -139,9 +139,9 @@ A few weeks ago, Hyperledger Composer updated their service to version 0.12.0. I
 
 .. image:: Images/42.png
 
-How many of you tried to create an identity of the child? Why do you think that you were unable to create an identity for your child that you created? 
+How many of you tried to create an identity of the child? Why do you think you were unable to create an identity for your child? 
 
-One thing is that we have the Child as an asset and not a participant in the model file in Composer. Also, you wouldn’t want to have your child have access to change vital information, until you give them the authorization to do so. 
+One thing is that we have the Child as an asset and not a participant in the model file in Composer. More importantly, you wouldn’t want to have your child have access to change vital information - until you give them the authorization to do so. 
 
 10. Alright, you have created several identities. How do we actually switch to them? I’m glad you asked. Click on admin in the top right and then click on Log Out.
 
@@ -159,7 +159,7 @@ One thing is that we have the Child as an asset and not a participant in the mod
 
 .. image:: Images/46.png
 
-Why do you think you couldn’t successfully create a member? When designing this network, that was what was agreed upon. In a real situation, you would discuss that between all participants on how you want to deal with that. 
+Why do you think you couldn’t successfully create a member? When designing this network, this type of authorization was what was agreed upon. In a real situation, you would discuss who can do what between all participants.
 
 14. Jump back over to the admin identity. There we have authorization to create participants and submit transactions. 
 
@@ -184,7 +184,7 @@ Part 4: Submitting Transactions
 
 .. image:: Images/49.png
 
-4. Now replace the ID Numbers to replicate the guardian, medical provider and child. Look at the below picture to get a sense of what to do.
+4. Now, replace the ID Numbers to replicate the guardian, medical provider and child. Look at the picture below to get a sense of what to do.
 
 .. image:: Images/50.png
 
@@ -192,11 +192,11 @@ That basically says, assign medical provider #1 (Aetna) to Child #1 (SJ).
 
 5. Click Submit once you have the ID Numbers you want.
 
-6. Once you submit the transaction and it is good, it will take you to the Historian. Now is a good time to tell you about the Historian. The Historian is the sequence of transactions or addition or removal of participants or assets. I didn’t tell you to look at the Historian when you were creating the Participants, but the Historian kept track of when and what type of participant or asset you created. You can scroll to the bottom to view the first transaction you created, which should be the Medical Provider, Aetna or whatever you called it. You can see by clicking on view record. 
+6. Once you submit the transaction, it will take you to the Historian. Now is a good time to tell you about the Historian. The Historian is the sequence of transactions or addition or removal of participants or assets. I didn’t tell you to look at the Historian when you were creating the Participants, but the Historian kept track of when and what type of participant or asset you created. You can scroll to the bottom to view the first transaction you created, which should be the Medical Provider, Aetna or whatever you called it. You can see by clicking on view record. 
 
 .. image:: Images/51.png
 
-7. Back to our transaction, click on the Childform on the left. Find the child you assigned a Medical Provider to. Click on Show All to view the entire asset of your child. Notice the medical provider you assigned it to? 
+7. Back to our transaction, click on the Childform on the left. Find the child you assigned a Medical Provider to. Click on Show All to view the entire asset of that child. Notice the medical provider you assigned it to? 
 
 .. image:: Images/52.png
 
@@ -208,9 +208,9 @@ That basically says, assign medical provider #1 (Aetna) to Child #1 (SJ).
 
 .. image:: Images/54.png
 
-My transaction says let member #1 (Fairmont High School Athletics) have Child #2’s (Emily) health record. This would be extremely useful when every year millions of kids get physicals in order to play a sport. Imagine having your medical provider authorize your child’s health record to approve them playing a sport. I know my mom would’ve enjoyed not going up to the High School an additional time. 
+My transaction says let member #1 (Fairmont High School Athletics) have Child #2’s (Emily) health record. This would be extremely useful when every year millions of kids get physicals in order to play a sport. Imagine having your medical provider authorize your child’s health record to approve them playing a sport. I know my parents would've enjoyed not dealing with both the High School and the Medical Provider.
 
-10. You can view this transaction by clicking on childform on the right and then Show All on Emily. Notice that member 1 is now in Emily’s description. 
+10. You can view this transaction by clicking on childform on the right and then Show All on Emily. Notice that member #1 is now in Emily’s description. 
 
 .. image:: Images/55.png
 
