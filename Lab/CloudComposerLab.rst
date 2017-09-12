@@ -2,7 +2,8 @@ Immunichain Blockchain Lab
 ==========================
 
 
-**Part 1: Starting and Creating Your Hyperledger Composer Network**
+Part 1: Starting and Creating Your Hyperledger Composer Network
+===============================================================
 
 1. Go to your browser and go to https://composer-playground.mybluemix.net/
 
@@ -18,27 +19,29 @@ Immunichain Blockchain Lab
 
 3. Then you will be in the Composer Playground Homepage. Click on ‘Deploy a Business Network.’
 
-
+.. image:: Images/26.png
 
 4. Then create a name for you Blockchain Network. Give it a description as well. Then finish off by selecting empty-business-network. Once you have the information you want and have selected, click on deploy in the bottom right. 
 
-
+.. image:: Images/27.png
 
 5. Afterwards, you can play with some of the other sample business network applications, like animal tracking or vehicle lifecycles. 
 
 6. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. You will see later how easy it is. Click on ‘Connect now’ in order to get connected to your Immunichain network.
 
-
+.. image:: Images/28.png
 
 7. Now you are in the Define section of the Composer Playground for Immunichain. Click on the +Add a File
 
+.. image:: Images/29.png
+
 8. Now drop in your .cto file. Click on Add once it has loaded. You will now do this for you .js and .acl files as well. 
 
-
+.. image:: Images/30.png
 
 9. After you have done that, your screen should look like this. If it does, click on each file and select ‘Update.’
 
-
+.. image:: Images/31.png
 
 **What did you just accomplish?**
 
