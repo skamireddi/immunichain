@@ -63,12 +63,12 @@ Part 2: Creating Assets and Participants
 .. image:: Images/99.png
 
 Before we create assets and participants, we need to know what each asset and participants represent. 
-	 - Guardian is obvious, but you are creating a parent
+	 - Guardian is simply a parent
 	 - MedProvider is simply a medical provider, like a doctor
-	 - Member is who an organization who can view the health record
+	 - Member is an organization that can view the health record
 	 - Childform is simply the child
 
-2. Now create a Medical Provider by clicking on the Medical Provider on the right and +Create New Participant in the top right. Give it Medical Provider serial number. I stick to 1, 2, 3 or low numbers that I can remember, but you can create any ID number you want. I suggest writing your ID numbers down as we move along. Once you have filled in the information click on Create.
+2. Now create a Medical Provider by clicking on the Medical Provider on the left and +Create New Participant in the top right. Give it Medical Provider serial number. I stick to 1, 2, 3 or low numbers that I can remember, but you can create any ID number you want. I suggest writing your ID numbers down as we move along. Once you have filled in the information click on Create.
 
 .. image:: Images/32.png
 
@@ -80,11 +80,11 @@ Before we create assets and participants, we need to know what each asset and pa
 
 .. image:: Images/34.png
 
-5. Go ahead and make a guardian as well. Remember the guarding ID number you created. 
+5. Go ahead and make a guardian as well. Remember the guardian ID number you created. 
 
 .. image:: Images/35.png
 
-6. Now, let’s make a child. Click on optional properties at the bottom. Assign him to the guardian you just created a step ago. 
+6. Now, let’s make a child by click on Childform on the left. Click on optional properties at the bottom. Assign him to the guardian you just created a step ago. 
 
 .. image:: Images/86.png
 
@@ -121,10 +121,6 @@ A few weeks ago, Hyperledger Composer updated their service to version 0.12.0. I
 .. image:: Images/40.png
 
 5. Click on Create New and you have now created a new identity
-
-6. Then another pop-up will appear. For the most part, you can ignore the top portion of that pop-up. As far as the bottom part, click on + Add to my Wallet
-
-.. image:: Images/87.png
 
 7. Once you have done that, this is what your screen will look like: 
 
@@ -175,7 +171,7 @@ Part 4: Submitting Transactions
 
 2. Click on Submit Transaction
 
-3. A pop-up will appear with the transaction of assign a Medical Provider to one the children you’ve created
+3. A pop-up will appear with the transaction to assign a Medical Provider to one of the children you’ve created
 
 .. image:: Images/49.png
 
