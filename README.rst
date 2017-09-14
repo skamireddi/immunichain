@@ -4,7 +4,7 @@ Welcome to the IMMUNIchain network
 
 **What is Hyperledger Composer?**
 
-Composer is a quick way of deploying Blockchain business networks and applications that showcase the ability to transact among participants and their assets. It’s a great to get a grasp of Blockchain and how it can apply to your business. 
+Composer is a quick way of deploying Blockchain business networks and applications that showcase the ability to transact among participants and their assets. It’s a great way to get a grasp of Blockchain and how it can apply to your business. 
 
 **How did Immunichain Come About?**
 
