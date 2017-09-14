@@ -12,7 +12,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 1. Go to your browser and go to https://composer-playground.mybluemix.net/
 
-	Composer Playground works best in Chrome and even better in Incognito. 
+	Composer Playground works best in Chrome and even better in Incognito Mode. 
 	If you run it in Firefox, you cannot run it in a Private Window.
 	I have always used Firefox without hiccups
 
@@ -26,7 +26,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/26.png
 
-4. Then create a name for you Blockchain Network. Give it a description as well. Then finish off by selecting empty-business-network. Once you have the information you want and have selected, click on deploy in the bottom right. 
+4. Then create a name for your Blockchain Network. Give it a description as well. Then finish off by selecting empty-business-network. Once you have the information you want and have selected, click on deploy in the bottom right. 
 
 .. image:: Images/27.png
 
@@ -40,7 +40,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/29.png
 
-8. Go to the directory where you saved the Github. Now drop in the .cto file. Click on Add once it has loaded. You will now do this for you .js and .acl files as well. 
+8. Go to the directory where you saved the Github. Now drop in the .cto file. Click on Add once it has loaded. You will now do this for your .js and .acl files as well. 
 
 .. image:: Images/30.png
 
@@ -60,7 +60,7 @@ Part 2: Creating Assets and Participants
 
 1. Now that you have an Immunichain Business Network, jump over to the Test section of the Composer Playground. The test area allows you to create assets, participants and submit transactions against your assets and participants. Your screen should look like this: 
 
-
+.. image:: Images/99.png
 
 Before we create assets and participants, we need to know what each asset and participants represent. 
 	 - Guardian is obvious, but you are creating a parent
