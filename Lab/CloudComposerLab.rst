@@ -20,10 +20,11 @@ Prerequisites
 	- Web Browser (Google Chrome)
 	- No prior knowledger of Hyperledger Composer or Blockchain required
 
-Go to **github.com/grice32/immunichain** and download the contents. 
 
 Part 1: Starting and Creating Your Hyperledger Composer Network
 ===============================================================
+
+Go to **github.com/grice32/immunichain** and download the content by clicking on the green button one the right. Depending on your system (Mac or Windows), there will be a pop-up asking you to save the download in a folder. Select a folder that you will remember. 
 
 1. Go to your browser and go to **https://composer-playground.mybluemix.net/**
 
