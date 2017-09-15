@@ -42,14 +42,6 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/28.png
 
-8. Now you are in the Define section of the Composer Playground for Immunichain. Click on the **+Add a File**
-
-.. image:: Images/29.png
-
-9. Go to the directory where you saved the Github. Now drop in the **.cto file.** Click on Add once it has loaded. You will now do this for your **.js** and **.acl** files as well. 
-
-.. image:: Images/30.png
-
 10. After you have done that, your screen should look like this. If it does, click on each file and select **Update.**
 
 .. image:: Images/31.png
