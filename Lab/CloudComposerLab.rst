@@ -83,11 +83,11 @@ Before we create assets and participants, we need to know what each asset and pa
 
 2. Now create a Medical Provider by clicking on the **Medical Provider** on the left and **+Create New Participant** in the top right. Give it Medical Provider serial number of 1. Once you have filled in the information click on **Create**
 
-.. image:: Images/32.png
+.. image:: Images/103.png
 
 3. Once you have created a medical provider, your screen should look like this: 
 
-.. image:: Images/33.png
+.. image:: Images/104.png
 
 4. Now, go ahead and create a member as well.
 
@@ -169,13 +169,13 @@ My transaction says let member #1 (Fairmont High School Athletics) have Child #2
 
 14. **Click on Submit Transaction** and then change the transaction type to addImmunizations. The format to add an immunization is a little different. In the Vaccine section put **{ "name" : "immunization", "provider" : "medical provider", "imdate" : "date" }** inbetween the brackets []. **Replace the immunization, medical provider and date with whatever you would like.** Here is what my transaction looks like: 
 
-.. image:: Images/58.png
+.. image:: Images/105.png
 
 15. To view your immunization, go your child in the Childform section
 
-.. image:: Images/59.png
+.. image:: Images/106.png
 
-16. Continue to make various transactions that you want. 
+16. Continue to make various transactions that you want 
 
 **What did you just accomplish?**
 
@@ -186,7 +186,7 @@ You submitted transactions against participants within Composer. Hopefully, you 
 Part 4: Production Immunichain
 ==============================
 
-1. Open up Google Chrome. Immunichain doesn’t work too well in Firefox. It does work in Firefox, but Google Chrome works the best. 
+1. Open up Google Chrome. Immunichain doesn’t work too well in Firefox. It does work in Firefox, but Google Chrome works the best
 
 2. Go to **https://immunichain.zcloud.marist.edu** - Your screen should look like this: 
 
@@ -196,15 +196,15 @@ Part 4: Production Immunichain
 
 4. **Enter the required information** you need in order to create an account. I would write down your username and password. We will only create a Healthcare Provider this time
 
-.. image:: Images/61.png
+.. image:: Images/107.png
 
 5. Your screen should look like this: 
 
-.. image:: Images/62.png
+.. image:: Images/108.png
 
 6. Log out of your participant by **clicking on Logout** button in the top right
 
-.. image:: Images/63.png
+.. image:: Images/109.png
 
 7. **Create another account,** but this time do a Member Organization
 
@@ -226,9 +226,9 @@ Part 4: Production Immunichain
 
 .. image:: Images/67.png
 
-13. Now fill in the information required. Go ahead and assign Healthcare Providers and Member Organizations to your child. Because there are a lot of people doing this lab, there will be a lot of various Healthcare Providers and Member Organizations to choose from. **Only select the Healthcare Providers and Member Organizations that you have personally created.** **Click on Submit** when you are done. 
+13. Now fill in the information required. Go ahead and assign Healthcare Providers and Member Organizations to your child. Because there are a lot of people doing this lab, there will be a lot of various Healthcare Providers and Member Organizations to choose from. **Only select the Healthcare Providers and Member Organizations that you have personally created.** **Click on Submit** when you are done 
 
-.. image:: Images/68.png
+.. image:: Images/110.png
 
 14. If you get the Success! page, **click on Logout** in the top right
 
@@ -238,7 +238,7 @@ Part 4: Production Immunichain
 
 16. Once you are in the home page of the Healthcare Provider, **click on Continue of Add Immunization**
 
-.. image:: Images/70.png
+.. image:: Images/108.png
 
 17. Select the child in the drop down
 
@@ -258,11 +258,11 @@ Part 4: Production Immunichain
 
 .. image:: Images/74.png
 
-22. This is the view that this member has on your child. The Member cannot edit the information. They can only view the health record that they have authorization to. 
+22. This is the view that this member has on your child. The Member cannot edit the information. They can only view the health record that they have authorization to
 
-.. image:: Images/75.png
+.. image:: Images/111.png
 
-23. Continue to make various accounts and updating your children that you create. 
+23. Continue to make various accounts and updating your children that you create
 
 **What did you just accomplish?**
 
