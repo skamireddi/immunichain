@@ -2,10 +2,25 @@ Immunichain Blockchain Lab
 ==========================
 
 
-Before we get Started
-=====================
+Introduction
+============
 
-Go to **github.com/grice32/immunichain** and download the contents. You will use these files throughout the lab. 
+Welcome to the Immunichain Blockchain Lab. This lab showcases the power of Blockchain through the tracking of Immunizations through Medical Providers, Guardians and selected Members. The Immunichain came from an internal IBM Blockchain Hackathon back in May. Around this time, an Open Mainframe Project intern Kevin Lee from University of Illinois at Urbana-Champaign was tasked to make a website demonstrating the benefits of Blockchain of this use case. In early August, Kevin showcased his end product, which you will get to work with today. 
+
+What are you going to accomplish today? The Hyperledger Composer Playground is way to produce Blockchain applications quickly without the heavy technical knowledge. We will be using the Cloud Composer Playground. We will create our Blockchain application with a .bna file (banana file) that will make up the Immunichain. We will then create assets and participants. After that, we will submit transactions and see how the participants look after those transactions. To end the lab portion, we will use the Immunichain website to examine how Blockchain can be useful in tracking immunizations between medical providers, selected members and guardians.
+
+Table of Contents
+	- Part 1: Starting and Creating Your Hyperledger Composer Network
+	- Part 2: Creating Assets and Participants
+	- Part 3: Submitting Transactions
+	- Part 4: Production Immunichain
+	
+Prerequisites
+	- Access to the internet
+	- Web Browser (Google Chrome)
+	- No prior knowledger of Hyperledger Composer or Blockchain required
+
+Go to **github.com/grice32/immunichain** and download the contents. 
 
 Part 1: Starting and Creating Your Hyperledger Composer Network
 ===============================================================
@@ -62,11 +77,11 @@ Part 2: Creating Assets and Participants
 
 Before we create assets and participants, we need to know what each asset and participants represent 
 	 - Guardian is simply a parent
-	 - MedProvider is a medical provider, like an insurance provider or a doctor
-	 - Member is an organization that can view the health record
+	 - MedProvider is a medical provider, such as a hospital, medical practice or doctor
+	 - Member is an organization that can only view the health record, such as a camp or high school athletics
 	 - Childform is a child
 
-2. Now create a Medical Provider by clicking on the **Medical Provider** on the left and **+Create New Participant** in the top right. Give it Medical Provider serial number. I stick to 1, 2, 3 or low numbers that I can remember, but you can create any ID number you want. I suggest writing your ID numbers down as we move along. Once you have filled in the information click on **Create**
+2. Now create a Medical Provider by clicking on the **Medical Provider** on the left and **+Create New Participant** in the top right. Give it Medical Provider serial number of 1. Once you have filled in the information click on **Create**
 
 .. image:: Images/32.png
 
