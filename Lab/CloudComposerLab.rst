@@ -99,68 +99,7 @@ You created assets and participants within the Composer Playground. Additionally
 
 
 
-Part 3: Creating and Switching to Different Identities
-======================================================
-
-A few weeks ago, Hyperledger Composer updated their service to version 0.12.0. It included a way to toggle between identities and Fabrics rapidly. This is really great to get the sense of how valuable Blockchain is. You will get an even better sense when we jump to the Immunichain website later on in the lab. 
-
-1. So now you have created multiple guardians, medical providers, members and children. Now we are going to switch identities. From the test section of Composer **click on Admin and then ID Registry** found in the top right 
-
-.. image:: Images/37.png
-
-2. If you did that successfully your screen should look like this: 
-
-.. image:: Images/38.png
-
-3. Now, click on **+ Issue New ID.** A pop-up will come to the top and ask for an ID Name and Participant
-
-4. Now, try creating a new identity (outside of Composer, I wouldn’t recommend trying to create a new identity) with the name of Aetna. For the participant just type in the number 1 or the ID Number you gave your participants and see what pops down
-
-.. image:: Images/40.png
-
-5. Click on **Create New** and you have now created a new identity
-
-7. Once you have done that, this is what your screen will look like: 
-
-.. image:: Images/41.png
-
-8. Create Identities for all of your participants. 
-
-9. Once you have done that your screen will look like this:
-
-.. image:: Images/42.png
-
-How many of you tried to create an identity of the child? Why do you think you were unable to create an identity for your child? 
-
-One thing is that we have the Child as an asset and not a participant in the model file in Composer. More importantly, you wouldn’t want to have your child have access to change vital information - until you give them the authorization to do so. 
-
-10. Alright, you have created several identities. How do we actually switch to them? I’m glad you asked. **Click on admin** in the top right and then **click on Log Out**
-
-.. image:: Images/43.png
-
-11. Now your screen will be filled with identities that you can connect to. 
-
-.. image:: Images/44.png
-
-12. Try connecting to your various identities. Once you connect jump over to the Test section of Composer. Notice how the top right is now the name you gave your identity. 
-
-.. image:: Images/45.png
-
-13. Try creating a Member in the Test section of Composer
-
-.. image:: Images/46.png
-
-Why do you think you couldn’t successfully create a member? When designing this network, this type of authorization was what was agreed upon. In a real situation, you would discuss who can do what between all participants.
-
-14. Jump back over to the admin identity. There we have authorization to create participants and submit transactions. 
-
-**What did you just accomplish?**
-
-You created various identities for the participants you have created in Composer. Then you created additional participants from those identities. For a good reason, you learned why you couldn’t do that.
-
-
-
-Part 4: Submitting Transactions
+Part 3: Submitting Transactions
 ===============================
 
 1. Make sure you are connected back to the admin identity. You know by noticing the name in the top right of the screen 
@@ -229,7 +168,7 @@ You submitted transactions against participants within Composer. Hopefully, you 
 
 
 
-Part 5: Production Immunichain
+Part 4: Production Immunichain
 ==============================
 
 1. Open up Google Chrome. Immunichain doesn’t work too well in Firefox. It does work in Firefox, but Google Chrome works the best. 
