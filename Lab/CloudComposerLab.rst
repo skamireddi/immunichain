@@ -28,15 +28,15 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 4. Then create a name for your Blockchain Network of **immunchain**. Give it a description as well. Then finish off by **selecting browse in the Model Network Starter**  
 
-.. image:: Images/100
+.. image:: Images/100.png
 
 5. That will pop-up a file folder. Go to the folder you downloaded the github contents. Then **select the immunichain.bna** file
 
-.. image:: Images/101
+.. image:: Images/101.png
 
 6. Next, click on **Deploy** that is located on the bottom right 
 
-.. image:: Images/102
+.. image:: Images/102.png
 
 7. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. You will see later how easy it is. Click on **Connect Now** in order to get connected to your Immunichain network
 
