@@ -42,7 +42,7 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/28.png
 
-10. After you have done that, your screen should look like this. If it does, click on each file and select **Update.**
+10. After you have done that, your screen should look like this **after clicking on Model File** on the left
 
 .. image:: Images/31.png
 
