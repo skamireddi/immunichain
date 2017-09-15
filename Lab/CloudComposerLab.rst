@@ -22,29 +22,35 @@ Part 1: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/25.png
 
-3. Then you will be in the Composer Playground Homepage. Click on Deploy a **Business Network**
+3. Then you will be in the Composer Playground Homepage. Click on **Deploy a Business Network**
 
 .. image:: Images/26.png
 
-4. Then create a name for your Blockchain Network. Give it a description as well. Then finish off by selecting **empty-business-network.** Once you have the information you want and have selected, click on **deploy** in the bottom right
+4. Then create a name for your Blockchain Network of **immunchain**. Give it a description as well. Then finish off by **selecting browse in the Model Network Starter**  
 
-.. image:: Images/27.png
+.. image:: Images/
 
-5. After this lab, you can play with some of the other sample business network applications, like animal tracking or vehicle lifecycles 
+5. That will pop-up a file folder. Go to the folder you downloaded the github contents. Then **select the immunichain.bna** file
 
-6. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. You will see later how easy it is. Click on **Connect Now** in order to get connected to your Immunichain network
+.. image:: Images/
+
+6. Next, click on **Deploy** that is located on the bottom right 
+
+.. image:: Images/
+
+7. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. You will see later how easy it is. Click on **Connect Now** in order to get connected to your Immunichain network
 
 .. image:: Images/28.png
 
-7. Now you are in the Define section of the Composer Playground for Immunichain. Click on the **+Add a File**
+8. Now you are in the Define section of the Composer Playground for Immunichain. Click on the **+Add a File**
 
 .. image:: Images/29.png
 
-8. Go to the directory where you saved the Github. Now drop in the **.cto file.** Click on Add once it has loaded. You will now do this for your **.js** and **.acl** files as well. 
+9. Go to the directory where you saved the Github. Now drop in the **.cto file.** Click on Add once it has loaded. You will now do this for your **.js** and **.acl** files as well. 
 
 .. image:: Images/30.png
 
-9. After you have done that, your screen should look like this. If it does, click on each file and select **Update.**
+10. After you have done that, your screen should look like this. If it does, click on each file and select **Update.**
 
 .. image:: Images/31.png
 
