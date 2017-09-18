@@ -98,7 +98,7 @@ Before we create assets and participants, we need to know what each asset and pa
 
 .. image:: Images/35.png
 
-6. Now, let’s make a child by **clicking on Childform** on the left. **Click on optional properties** at the bottom first. Then assign him to the guardian you just created a step ago. **Leave the members, immunization and empty.  
+6. Now, let’s make a child by **clicking on Childform** on the left. **Click on optional properties** at the bottom first. Then assign him to the guardian you just created a step ago. **Leave the medprovider, members, and immunizations empty** 
 
 .. image:: Images/86.png
 
