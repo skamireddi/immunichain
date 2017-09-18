@@ -58,7 +58,7 @@ Go to **github.com/grice32/immunichain** and download the content by clicking on
 
 .. image:: Images/28.png
 
-10. After you have done that, your screen should look like this **after clicking on Model File** on the left
+8. After you have done that, your screen should look like this **after clicking on Model File** on the left
 
 .. image:: Images/31.png
 
@@ -98,7 +98,7 @@ Before we create assets and participants, we need to know what each asset and pa
 
 .. image:: Images/35.png
 
-6. Now, let’s make a child by **clicking on Childform** on the left. **Click on optional properties** at the bottom first. Then assign him to the guardian you just created a step ago 
+6. Now, let’s make a child by **clicking on Childform** on the left. **Click on optional properties** at the bottom first. Then assign him to the guardian you just created a step ago. **Leave the members, immunization and empty.  
 
 .. image:: Images/86.png
 
@@ -180,7 +180,7 @@ My transaction says let member #1 have a read only copy of Child #2’s health r
 
 **What did you just accomplish?**
 
-You submitted transactions against participants within Composer. Hopefully, you now understand the value of authorizing members. Also, you added Immunizations to your child, which is the pillar of Immunichain.
+You submitted transactions against participants within Composer. You now understand the value of authorizing members. Also, you added Immunizations to your child, which is the pillar of Immunichain.
 
 
 
