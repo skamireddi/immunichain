@@ -1,6 +1,28 @@
 Immunichain Blockchain Lab
 ==========================
 
+
+
+Introduction
+============
+
+Welcome to the Immunichain Blockchain Lab. This lab showcases the power of Blockchain through the tracking of Immunizations through Medical Providers, Guardians and selected Members. The Immunichain came from an internal IBM Blockchain Hackathon back in May. Around this time, an Open Mainframe Project intern Kevin Lee from University of Illinois at Urbana-Champaign was tasked to make a website demonstrating the benefits of Blockchain of this use case. In early August, Kevin showcased his end product, which you will get to work with today. 
+
+What are you going to accomplish today? The Hyperledger Composer Playground is way to produce Blockchain applications quickly without the heavy technical knowledge. We will be using the Cloud Composer Playground. We will create our Blockchain application with a .bna file (banana file) that will make up the Immunichain. We will then create assets and participants. After that, we will submit transactions and see how the participants look after those transactions. Toward the end of the lab portion, we will use the Immunichain website to examine how Blockchain can be useful in tracking immunizations between medical providers, selected members and guardians.
+
+Table of Contents
+	- Part 1: Starting and Creating Your Hyperledger Composer Network
+	- Part 2: Creating Assets and Participants
+	- Part 3: Submitting Transactions
+	- Part 4: Production Immunichain
+	
+Prerequisites
+	- Access to the internet
+	- Web Browser (Google Chrome)
+	- No prior knowledger of Hyperledger Composer or Blockchain required
+	
+	
+
 Part 1: Setting Up Your LinuxONE Community Cloud Account
 ========================================================
 
@@ -173,9 +195,9 @@ Part 3: Starting and Creating Your Hyperledger Composer Network
 
 .. image:: Images/26.png
 
-4. Then create a name for you Blockchain Network. Give it a description as well. Then finish off by selecting empty-business-network. Once you have the information you want and have selected, click on deploy in the bottom right. 
+4. Then create a name for your Blockchain Network. Give it a description as well. Then finish off by selecting empty-business-network. Once you have the information you want and have selected, click on deploy in the bottom right. 
 
-.. image:: Images/27.png
+.. image:: Images/100.png
 
 5. After this lab, you can play with some of the other sample business network applications, like animal tracking or vehicle lifecycles. 
 
@@ -202,7 +224,7 @@ You started you Hyperledger Composer Playground. At first you started with a bla
 
 
 
-Part 2: Creating Assets and Participants
+Part 4: Creating Assets and Participants
 ========================================
 
 1. Now that you have an Immunichain Business Network, jump over to the Test section of the Composer Playground. The test area allows you to create assets, participants and submit transactions against your assets and participants. Your screen should look like this: 
@@ -217,11 +239,11 @@ Before we create assets and participants, we need to know what each asset and pa
 
 2. Now create a Medical Provider by clicking on the Medical Provider on the right and +Create New Participant in the top right. Give it Medical Provider serial number. I stick to 1, 2, 3 or low numbers that I can remember, but you can create any ID number you want. I suggest writing your ID numbers down as we move along. Once you have filled in the information click on Create.
 
-.. image:: Images/32.png
+.. image:: Images/103.png
 
 3. Once you have created a medical provider, your screen should look like this: 
 
-.. image:: Images/33.png
+.. image:: Images/104.png
 
 4. Now, go ahead and create a member as well.
 
@@ -248,7 +270,7 @@ You created assets and participants within the Composer Playground. Additionally
 
 
 
-Part 3: Creating and Switching to Different Identities
+Part 5: Creating and Switching to Different Identities
 ======================================================
 
 A few weeks ago, Hyperledger Composer updated their service to version 0.12.0. It included a way to toggle between identities and Fabrics rapidly. This is really great to get the sense of how valuable Blockchain is. You will get an even better sense when we jump to the Immunichain website later on in the lab. 
@@ -265,23 +287,23 @@ A few weeks ago, Hyperledger Composer updated their service to version 0.12.0. I
 
 4. Now, try creating a new identity (outside of Composer, I wouldn’t recommend trying to create a new identity) with the name of Aetna. For the participant just type in the number 1 or the ID Number you gave your participants and see what pops down.
 
-.. image:: Images/40.png
+.. image:: Images/150.png
 
 5. Click on Create New and you have now created a new identity
 
 6. Then another pop-up will appear. For the most part, you can ignore the top portion of that pop-up. As far as the bottom part, click on + Add to my Wallet
 
-.. image:: Images/87.png
+.. image:: Images/151.png
 
 7. Once you have done that, this is what your screen will look like: 
 
-.. image:: Images/41.png
+.. image:: Images/152.png
 
 8. Create Identities for all of your participants. 
 
 9. Once you have done that your screen will look like this:
 
-.. image:: Images/42.png
+.. image:: Images/153.png
 
 How many of you tried to create an identity of the child? Why do you think you were unable to create an identity for your child? 
 
@@ -289,11 +311,11 @@ One thing is that we have the Child as an asset and not a participant in the mod
 
 10. Alright, you have created several identities. How do we actually switch to them? I’m glad you asked. Click on admin in the top right and then click on Log Out.
 
-.. image:: Images/43.png
+.. image:: Images/154.png
 
 11. Now your screen will be filled with identities that you can connect to. 
 
-.. image:: Images/44.png
+.. image:: Images/155.png
 
 12. Try connecting to your various identities. Once you connect jump over to the Test section of Composer. Notice how the top right is now the name you gave your identity. 
 
@@ -313,7 +335,7 @@ You created various identities for the participants you have created in Composer
 
 
 
-Part 4: Submitting Transactions
+Part 6: Submitting Transactions
 ===============================
 
 1. Make sure you are connected back to the admin identity. You know by noticing the name in the top right of the screen. 
@@ -368,11 +390,11 @@ My transaction says let member #1 (Fairmont High School Athletics) have Child #2
 
 14. Click on Submit Transaction and then change the transaction type to addImmunizations. The format to add an immunization is a little different. In the Vaccine section put { "name" : "immunization", "provider" : "medical provider", "imdate" : "date" } inbetween the brackets. Replace the immunization, medical provider and date with whatever you would like. Here is what my transaction looks like: 
 
-.. image:: Images/58.png
+.. image:: Images/105.png
 
 15. To view your immunization, go your child in the Childform section.
 
-.. image:: Images/59.png
+.. image:: Images/106.png
 
 16. Continue to make various transactions that you want. 
 
@@ -382,7 +404,7 @@ You submitted transactions against participants within Composer. Hopefully, you 
 
 
 
-Part 5: Production Immunichain
+Part 7: Production Immunichain
 ==============================
 
 1. Open up Google Chrome. Immunichain doesn’t work too well in Firefox. It does work in Firefox, but Google Chrome works the best. 
@@ -395,15 +417,15 @@ Part 5: Production Immunichain
 
 4. Enter the required information you need in order to create an account. I would write down your username and password. We will only create a Healthcare Provider this time.
 
-.. image:: Images/61.png
+.. image:: Images/107.png
 
 5. Your screen should look like this: 
 
-.. image:: Images/62.png
+.. image:: Images/108.png
 
 6. Log out of your participant by clicking on Logout button in the top right
 
-.. image:: Images/63.png
+.. image:: Images/109.png
 
 7. Create another account, but this time do a Member Organization. 
 
@@ -427,7 +449,7 @@ Part 5: Production Immunichain
 
 13. Now fill in the information required. Go ahead and assign Healthcare Providers and Member Organizations to your child. Because there are a lot of people doing this lab, there will be a lot of various Healthcare Providers and Member Organizations to choose from. Only select the Healthcare Providers and Member Organizations that you have personally created. Click on Submit when you are done. 
 
-.. image:: Images/68.png
+.. image:: Images/110.png
 
 14. If you get the Success! page, click on Logout in the top right. 
 
@@ -437,7 +459,7 @@ Part 5: Production Immunichain
 
 16. Once you are in the home page of the Healthcare Provider, click on Continue of Add Immunization.
 
-.. image:: Images/70.png
+.. image:: Images/108.png
 
 17. Select the child in the drop down
 
@@ -459,7 +481,7 @@ Part 5: Production Immunichain
 
 22. This is the view that this member has on your child. The Member cannot edit the information. They can only view the health record that they have authorization to. 
 
-.. image:: Images/75.png
+.. image:: Images/111.png
 
 23. Continue to make various accounts and updating your children that you create. 
 
