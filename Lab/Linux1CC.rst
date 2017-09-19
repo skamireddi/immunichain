@@ -11,10 +11,15 @@ Welcome to the Immunichain Blockchain Lab. This lab showcases the power of Block
 What are you going to accomplish today? The Hyperledger Composer Playground is way to produce Blockchain applications quickly without the heavy technical knowledge. We will be using the Cloud Composer Playground. We will create our Blockchain application with a .bna file (banana file) that will make up the Immunichain. We will then create assets and participants. After that, we will submit transactions and see how the participants look after those transactions. Toward the end of the lab portion, we will use the Immunichain website to examine how Blockchain can be useful in tracking immunizations between medical providers, selected members and guardians.
 
 Table of Contents
-	- Part 1: Starting and Creating Your Hyperledger Composer Network
-	- Part 2: Creating Assets and Participants
-	- Part 3: Submitting Transactions
-	- Part 4: Production Immunichain
+	- Part 1: Setting Up Your LinuxONE Community Cloud Account
+	- Part 2: Getting Your Linux Guest Ready for Composer Playground
+	- Part 3: Starting and Creating Your Hyperledger Composer Network
+	- Part 4: Creating Assets and Participants
+	- Part 5: Creating and Switching to Different Identities
+	- Part 6: Submitting Transactions
+	- Part 7: Production Immunichain
+	- Part 8: Connecting Composer to a Fabric
+	- Part 9: Connecting Your Immunichain Fabric to a REST Server
 	
 Prerequisites
 	- Access to the internet
@@ -552,8 +557,8 @@ You exported your Composer Playground and connected it to a Hyperledger Fabric. 
 
 
 
-Part 9: Connecting Your Immunichain to a REST Server
-====================================================
+Part 9: Connecting Your Immunichain Fabric to a REST Server
+===========================================================
 
 1. In your terminal do which composer-rest-server
 
@@ -606,6 +611,8 @@ Part 9: Connecting Your Immunichain to a REST Server
 **What did you just accomplish?**
 
 You started the Composure REST server that makes up the Immunichain Network. Then you added a few participants and assets from the REST server and tested it to verify that it successfully worked. 
+
+
 
 End of Lab!
 ===========
