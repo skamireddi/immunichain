@@ -581,19 +581,19 @@ Part 9: Connecting Your Immunichain Fabric to a REST Server
 
 6. Make appropriate changes that you see in the picture below.
 
-.. image:: Images/92.png
+.. image:: Images/112.png
 
 7. Click on Try it out! 
 
 8. Scroll down and look at the response code. If you get Response Code: 200 that is very good. That means it was added as a Medical Provider.
 
-.. image:: Images/93.png
+.. image:: Images/113.png
 
 9.  To test this out scroll back up and click on GET.
 
 10. Once GET has loaded, click on Try it out! Scroll down and you will now see Aetna as a Medical Provider.
 
-.. image:: Images/94.png
+.. image:: Images/114.png
 
 11. Let’s try adding a Member. Click on ibm_wsc_immunichain_Member and then POST.
 
