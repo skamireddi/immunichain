@@ -291,7 +291,7 @@ A few weeks ago, Hyperledger Composer updated their service to version 0.12.0. I
 
 3. Now, click on + Issue New ID. A pop-up will come to the top and ask for an ID Name and Participant
 
-4. Now, try creating a new identity (outside of Composer, I wouldn’t recommend trying to create a new identity) with the name of Aetna. For the participant just type in the number 1 or the ID Number you gave your participants and see what pops down.
+4. Now, try creating a new identity (outside of Composer, I wouldn’t recommend trying to create a new identity) with the name of HealthQuest. For the participant just type in the number 1 or the ID Number you gave your participants and see what pops down.
 
 .. image:: Images/150.png
 
@@ -358,11 +358,11 @@ Part 6: Submitting Transactions
 
 .. image:: Images/50.png
 
-That basically says, assign medical provider #1 (Aetna) to Child #1 (SJ).
+That basically says, assign medical provider #1 (HealthQuest) to Child #1 (SJ).
 
 5. Click Submit once you have the ID Numbers you want.
 
-6. Once you submit the transaction, it will take you to the Historian. Now is a good time to tell you about the Historian. The Historian is the sequence of transactions or addition or removal of participants or assets. I didn’t tell you to look at the Historian when you were creating the Participants, but the Historian kept track of when and what type of participant or asset you created. You can scroll to the bottom to view the first transaction you created, which should be the Medical Provider, Aetna or whatever you called it. You can see by clicking on view record. 
+6. Once you submit the transaction, it will take you to the Historian. Now is a good time to tell you about the Historian. The Historian is the sequence of transactions or addition or removal of participants or assets. I didn’t tell you to look at the Historian when you were creating the Participants, but the Historian kept track of when and what type of participant or asset you created. You can scroll to the bottom to view the first transaction you created, which should be the Medical Provider, HealthQuest or whatever you called it. You can see by clicking on view record. 
 
 .. image:: Images/51.png
 
@@ -591,7 +591,7 @@ Part 9: Connecting Your Immunichain Fabric to a REST Server
 
 9.  To test this out scroll back up and click on GET.
 
-10. Once GET has loaded, click on Try it out! Scroll down and you will now see Aetna as a Medical Provider.
+10. Once GET has loaded, click on Try it out! Scroll down and you will now see HealthQuest as a Medical Provider.
 
 .. image:: Images/114.png
 
