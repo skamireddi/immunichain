@@ -24,9 +24,9 @@ Prerequisites
 Part 1: Starting and Creating Your Hyperledger Composer Network
 ===============================================================
 
-Go to **github.com/grice32/immunichain** and download the content by clicking on the green button on the right. Depending on your system (Mac or Windows), there will be a pop-up asking you to save the download in a folder. Select a folder that you will remember. 
+Go to ``github.com/grice32/immunichain`` and download the content by clicking on the green button on the right. Depending on your system (Mac or Windows), there will be a pop-up asking you to save the download in a folder. Select a folder that you will remember. 
 
-1. Go to your browser and go to **https://composer-playground.mybluemix.net/**
+1. Go to your browser and go to ``https://composer-playground.mybluemix.net/``
 
 	Composer Playground works best in Chrome and even better in Incognito Mode. 
 	If you run it in Firefox, you cannot run it in a Private Window.
@@ -42,7 +42,7 @@ Go to **github.com/grice32/immunichain** and download the content by clicking on
 
 .. image:: Images/26.png
 
-4. Then create a name for your Blockchain Network of **immunichain**. Give it a description as well. Then finish off by **selecting browse in the Model Network Starter**  
+4. Then create a name for your Blockchain Network of ``immunichain``. Give it a description as well. Then finish off by **selecting browse in the Model Network Starter**  
 
 .. image:: Images/100.png
 
@@ -84,6 +84,14 @@ Before we create assets and participants, we need to know what each asset and pa
 
 2. Now create a Medical Provider by clicking on the **Medical Provider** on the left and **+Create New Participant** in the top right. Give it Medical Provider ID number of 1. Once you have filled in the information click on **Create**
 
+::
+
+ {
+  "$class": "ibm.wsc.immunichain.MedProvider",
+  "medid": "medid:1",
+  "name": "HealthQuest"
+ }
+
 .. image:: Images/103.png
 
 3. Once you have created a medical provider, your screen should look like this: 
@@ -92,13 +100,43 @@ Before we create assets and participants, we need to know what each asset and pa
 
 4. Now, go ahead and create a member as well. You can give it an ID number of 1 as well
 
+::
+
+ {
+  "$class": "ibm.wsc.immunichain.Member",
+  "memid": "memid:1",
+  "name": "Fairmont High School Athletics"
+ }
+
 .. image:: Images/34.png
 
 5. Go ahead and make a guardian as well. Give the guardian an ID number of 1 as well
 
+::
+
+ {
+  "$class": "ibm.wsc.immunichain.Guardian",
+  "gid": "gid:1",
+  "name": "Austin"
+ }
+
 .. image:: Images/35.png
 
 6. Now, let’s make a child by **clicking on Childform** on the left. **Click on optional properties** at the bottom first. Then assign him to the guardian you just created a step ago. **Leave the medprovider, members, and immunizations empty** 
+
+::
+
+ {
+  "$class": "ibm.wsc.immunichain.Childform",
+  "cid": "cid:1",
+  "name": "SJ",
+  "address": "123 Basic Ave",
+  "guardian": "resource:ibm.wsc.immunichain.Guardian#gid:1",
+  "dob": "06/10/2016",
+  "medproviders": [],
+  "members": [],
+  "immunizations": []
+ }
 
 .. image:: Images/86.png
 
@@ -130,6 +168,15 @@ Part 3: Submitting Transactions
 
 4. Now, **replace the ID Numbers** to replicate the guardian, medical provider and child. Look at the picture below to get a sense of what to do
 
+::
+
+ {
+  "$class": "ibm.wsc.immunichain.assignMedProvider",
+  "guardian": "resource:ibm.wsc.immunichain.Guardian#gid:1",
+  "medprovider": "resource:ibm.wsc.immunichain.MedProvider#medid:1",
+  "childform": "resource:ibm.wsc.immunichain.Childform#cid:1"
+ }
+
 .. image:: Images/50.png
 
 That basically says, assign medical provider #1 to Child #1.
@@ -150,6 +197,15 @@ That basically says, assign medical provider #1 to Child #1.
 
 9. Now, let’s make an authorized member transaction. Here is my transaction. You can make any type of transaction you want here
 
+::
+
+ {
+  "$class": "ibm.wsc.immunichain.authMember",
+  "guardian": "resource:ibm.wsc.immunichain.Guardian#gid:1",
+  "member": "resource:ibm.wsc.immunichain.Member#memid:1",
+  "childform": "resource:ibm.wsc.immunichain.Childform#cid:2"
+ }
+
 .. image:: Images/54.png
 
 My transaction says let member #1 have a read only copy of Child #2’s health record. This would be extremely useful when every year millions of kids get physicals in order to play a sport. Imagine having your medical provider authorize your child’s health record to approve them playing a sport. I know my parents would've enjoyed not dealing with both, the High School and the Medical Provider, to just play a sport. Also, because it is read only, the member wouldn't be able to change any information. 
@@ -158,7 +214,16 @@ My transaction says let member #1 have a read only copy of Child #2’s health r
 
 .. image:: Images/55.png
 
-11. Let’s do another transaction. This time, let’s remove an authorized member that we just gave to your child. Here is what my transaction looks like: 
+11. Let’s do another transaction. This time, let’s remove an authorized member that we just gave to your child. Here is what my transaction looks like
+
+::
+
+ {
+  "$class": "ibm.wsc.immunichain.removeMemberAuth",
+  "guardian": "resource:ibm.wsc.immunichain.Guardian#gid:1",
+  "member": "resource:ibm.wsc.immunichain.Member#memid:1",
+  "childform": "resource:ibm.wsc.immunichain.Childform#cid:2"
+ }
 
 .. image:: Images/56.png
 
@@ -168,11 +233,19 @@ My transaction says let member #1 have a read only copy of Child #2’s health r
 
 13. We have submitted transactions, but now let’s actually add some immunizations to a child
 
-14. **Click on Submit Transaction** and then change the transaction type to addImmunizations. The format to add an immunization is a little different. In the Vaccine section copy **{ "name" : "immunization", "provider" : "medical provider", "imdate" : "date" }** inbetween the brackets []. **Replace the immunization, medical provider and date with whatever you would like.** Here is what my transaction looks like: 
+14. **Click on Submit Transaction** and then change the transaction type to addImmunizations. The format to add an immunization is a little different. In the Vaccine section copy **{ "name" : "immunization", "provider" : "medical provider", "imdate" : "date" }** inbetween the brackets []. **Replace the immunization, medical provider and date with whatever you would like.** Here is what my transaction looks like
+
+::
+
+ {
+  "$class": "ibm.wsc.immunichain.addImmunizations",
+  "vaccines": [{ "name" : "WhoopingCough", "provider" : "HealthQuest", "imdate" : "09/21/2017" }],
+  "childform": "resource:ibm.wsc.immunichain.Childform#cid:1"
+ }
 
 .. image:: Images/105.png
 
-15. To view your immunization, go your child in the Childform section
+15. To view your immunization, **go your child in the Childform section**
 
 .. image:: Images/106.png
 
@@ -189,7 +262,7 @@ Part 4: Production Immunichain
 
 1. Open up Google Chrome. Immunichain doesn’t work too well in Firefox. It does work in Firefox, but Google Chrome works the best
 
-2. Go to **https://immunichain.zcloud.marist.edu** - Your screen should look like this: 
+2. Go to ``https://immunichain.zcloud.marist.edu`` - Your screen should look like this: 
 
 .. image:: Images/60.png
 
@@ -207,7 +280,7 @@ Part 4: Production Immunichain
 
 .. image:: Images/109.png
 
-7. **Create another account,** but this time do a Member Organization
+7. **Create another account,** but this time do a **Member Organization**
 
 .. image:: Images/64.png
 
@@ -215,7 +288,7 @@ Part 4: Production Immunichain
 
 .. image:: Images/65.png
 
-9. Log out of that participant. Create a few more Healthcare Providers and Member Organizations
+9. Log out of that participant. **Create a few more Healthcare Providers and Member Organizations**
 
 10. Once you have a few more participants, let’s **create a Guardian now** 
 
@@ -227,7 +300,7 @@ Part 4: Production Immunichain
 
 .. image:: Images/67.png
 
-13. Now fill in the information required. Go ahead and assign Healthcare Providers and Member Organizations to your child. Because there are a lot of people doing this lab, there will be a lot of various Healthcare Providers and Member Organizations to choose from. **Only select the Healthcare Providers and Member Organizations that you have personally created.** **Click on Submit** when you are done 
+13. Now fill in the information required. Go ahead and assign Healthcare Providers and Member Organizations to your child. Because there are a lot of people doing this lab, there will be a lot of various Healthcare Providers and Member Organizations to choose from. **Only select the Healthcare Providers and Member Organizations that you have personally created. Click on Submit** when you are done 
 
 .. image:: Images/110.png
 
