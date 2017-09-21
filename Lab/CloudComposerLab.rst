@@ -82,7 +82,7 @@ Before we create assets and participants, we need to know what each asset and pa
 	 - Member is an organization that can only view the health record, such as a camp or high school athletics
 	 - Childform is a child
 
-2. Now create a Medical Provider by clicking on the **Medical Provider** on the left and **+Create New Participant** in the top right. Give it Medical Provider ID number of 1. Once you have filled in the information click on **Create**
+2. Now create a Medical Provider by clicking on the **MedProvider** on the left and **+Create New Participant** in the top right. Give it Medical Provider ID number of 1. Once you have filled in the information click on **Create**
 
 ::
 
@@ -98,7 +98,7 @@ Before we create assets and participants, we need to know what each asset and pa
 
 .. image:: Images/104.png
 
-4. Now, go ahead and create a member as well. You can give it an ID number of 1 as well
+4. Now, **click on Member on the left and create a member as well by clicking on Create New Participant.** You can give it an ID number of 1 as well
 
 ::
 
@@ -110,7 +110,7 @@ Before we create assets and participants, we need to know what each asset and pa
 
 .. image:: Images/34.png
 
-5. Go ahead and make a guardian as well. Give the guardian an ID number of 1 as well
+5. Go ahead and **click on Guardian on the left and create a guardian by clicking on Create New Participant.** Give the guardian an ID number of 1 as well
 
 ::
 
@@ -122,7 +122,7 @@ Before we create assets and participants, we need to know what each asset and pa
 
 .. image:: Images/35.png
 
-6. Now, let’s make a child by **clicking on Childform** on the left. **Click on optional properties** at the bottom first. Then assign him to the guardian you just created a step ago. **Leave the medprovider, members, and immunizations empty** 
+6. Now, let’s make a child by **clicking on Childform on the left and then clicking on Create New Asset. Click on optional properties at the bottom first.** Then assign him to the guardian you just created a step ago. **Leave the medprovider, members, and immunizations empty** 
 
 ::
 
@@ -144,29 +144,31 @@ Before we create assets and participants, we need to know what each asset and pa
 
 .. image:: Images/36.png
 
-8. Go ahead and create more medical providers, members, guardians and children. Just to remember to write down the ID numbers. This will make more sense when we submit transactions. 
+8. You can jump to part 3 if you are finished, but if you want to you can create more medical providers, members, guardians and children. Just remember to write down the ID numbers. This will make more sense when we submit transactions. 
 
 
 **What did you just accomplish?**
 
-You created assets and participants within the Composer Playground. Additionally, I you wrote down the various ID numbers. We are going to need them throughout the lab. 
+You created assets and participants within the Composer Playground. 
 
 
 
 Part 3: Submitting Transactions
 ===============================
 
-1. Make sure you are connected back to the admin identity. You know by noticing the name in the top right of the screen 
+Now that you have created participants and assets, you can now manipulate the asset by submitting transactions.
+
+1. Make sure you are connected to the admin identity. You will know that by noticing the name in the top right portion of the screen 
 
 .. image:: Images/47.png
 
-2. Click on Submit Transaction found in the bottom left
+2. **Click on Submit Transaction** found in the bottom left
 
 3. A pop-up will appear with the transaction to assign a Medical Provider to one of the children you’ve created
 
 .. image:: Images/49.png
 
-4. Now, **replace the ID Numbers** to replicate the guardian, medical provider and child. Look at the picture below to get a sense of what to do
+4. Now, **replace the ID Numbers** to replicate the guardian, medical provider and child that were created in part 2. Look at the picture below to get a sense of what to do
 
 ::
 
@@ -179,15 +181,15 @@ Part 3: Submitting Transactions
 
 .. image:: Images/50.png
 
-That basically says, assign medical provider #1 to Child #1.
+That basically says, assign medical provider #1 to Child #1. You are authorizing Medical Provider #1 to be able to add immunizations to Child #1
 
 5. **Click Submit** once you have the ID Numbers you want
 
-6. Once you submit the transaction, it will take you to the Historian. Now is a good time to tell you about the Historian. The Historian is the sequence of transactions or addition or removal of participants or assets. I didn’t tell you to look at the Historian when you were creating the Participants, but the Historian kept track of when and what type of participant or asset you created. You can scroll to the bottom to view the first transaction you created, which should be the Medical Provider you created. You can see by clicking on view record. 
+6. Once you submit the transaction, it will take you to the Historian. Now is a good time to tell you about the Historian. The Historian is a specialised registry which records successful transactions, including the participants and identities that submitted them. I didn’t tell you to look at the Historian when you were creating the Participants, but the Historian kept track of when and what type of participant or asset you created. You can scroll to the bottom to view the first transaction you created, which should be the Medical Provider you created. You can see by clicking on view record. 
 
 .. image:: Images/51.png
 
-7. Back to our transaction, **click on the Childform** on the left. Find the child you assigned a Medical Provider to. **Click on Show All** to view the entire asset of that child. Notice the medical provider you assigned it to? 
+7. Back to our auhtorized member transaction, **click on the Childform** on the left. Find the child you assigned a Medical Provider to. **Click on Show All** to view the entire asset of that child. Notice the medical provider you assigned to the child
 
 .. image:: Images/52.png
 
@@ -203,16 +205,14 @@ That basically says, assign medical provider #1 to Child #1.
   "$class": "ibm.wsc.immunichain.authMember",
   "guardian": "resource:ibm.wsc.immunichain.Guardian#gid:1",
   "member": "resource:ibm.wsc.immunichain.Member#memid:1",
-  "childform": "resource:ibm.wsc.immunichain.Childform#cid:2"
+  "childform": "resource:ibm.wsc.immunichain.Childform#cid:1"
  }
 
-.. image:: Images/54.png
-
-My transaction says let member #1 have a read only copy of Child #2’s health record. This would be extremely useful when every year millions of kids get physicals in order to play a sport. Imagine having your medical provider authorize your child’s health record to approve them playing a sport. I know my parents would've enjoyed not dealing with both, the High School and the Medical Provider, to just play a sport. Also, because it is read only, the member wouldn't be able to change any information. 
+My transaction says let member #1 have a read only copy of Child #1’s health record. This would be extremely useful when every year millions of kids get physicals in order to play a sport. Imagine having the guardian authorize their child’s health record to a member organization (High School Athletics) to approve them playing a sport. I know my parents would've enjoyed not dealing with both, the High School and the Medical Provider, to just play a sport. Also, because it is read only, the member wouldn't be able to change any information. 
 
 10. You can view this transaction by **clicking on childform** on the left and then **Show All** on your child. Notice that member #1 is now in the child’s description
 
-.. image:: Images/55.png
+.. image:: Images/115.png
 
 11. Let’s do another transaction. This time, let’s remove an authorized member that we just gave to your child. Here is what my transaction looks like
 
@@ -222,14 +222,12 @@ My transaction says let member #1 have a read only copy of Child #2’s health r
   "$class": "ibm.wsc.immunichain.removeMemberAuth",
   "guardian": "resource:ibm.wsc.immunichain.Guardian#gid:1",
   "member": "resource:ibm.wsc.immunichain.Member#memid:1",
-  "childform": "resource:ibm.wsc.immunichain.Childform#cid:2"
+  "childform": "resource:ibm.wsc.immunichain.Childform#cid:1"
  }
-
-.. image:: Images/56.png
 
 12. Your child in the Childform section should look like this: 
 
-.. image:: Images/57.png
+.. image:: Images/116.png
 
 13. We have submitted transactions, but now let’s actually add some immunizations to a child
 
@@ -249,7 +247,7 @@ My transaction says let member #1 have a read only copy of Child #2’s health r
 
 .. image:: Images/106.png
 
-16. Continue to make various transactions that you want 
+16. You can now jump to Part 4, but if you want to continue you can make various transactions that you want 
 
 **What did you just accomplish?**
 
