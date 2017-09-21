@@ -1,19 +1,19 @@
-Immunichain Blockchain Lab
+IMMUNIChain Blockchain Lab
 ==========================
 
 
 Introduction
 ============
 
-Welcome to the Immunichain Blockchain Lab. This lab showcases the power of Blockchain through the tracking of Immunizations through Medical Providers, Guardians and selected Members. The Immunichain came from an internal IBM Blockchain Hackathon back in May. Around this time, an Open Mainframe Project intern Kevin Lee from University of Illinois at Urbana-Champaign was tasked to make a website demonstrating the benefits of Blockchain of this use case. In early August, Kevin showcased his end product, which you will get to work with today. 
+Welcome to the IMMUNIChain Blockchain Lab. This lab showcases the power of Blockchain through the tracking of Immunizations through Medical Providers, Guardians and selected Members. The IMMUNIChain came from an internal IBM Blockchain Hackathon back in May. Around this time, an Open Mainframe Project intern Kevin Lee from University of Illinois at Urbana-Champaign was tasked to make a website demonstrating the benefits of Blockchain of this use case. In early August, Kevin showcased his end product, which you will get to work with today. 
 
-What are you going to accomplish today? The Hyperledger Composer Playground is way to produce Blockchain applications quickly without the heavy technical knowledge. We will be using the Cloud Composer Playground. We will create our Blockchain application with a .bna file (banana file) that will make up the Immunichain. We will then create assets and participants. After that, we will submit transactions and see how the participants look after those transactions. Toward the end of the lab portion, we will use the Immunichain website to examine how Blockchain can be useful in tracking immunizations between medical providers, selected members and guardians.
+What are you going to accomplish today? The Hyperledger Composer Playground is way to produce Blockchain applications quickly without the heavy technical knowledge. We will be using the Cloud Composer Playground. We will create our Blockchain application with a .bna file (banana file) that will make up the IMMUNIChain. We will then create assets and participants. After that, we will submit transactions and see how the participants look after those transactions. Toward the end of the lab portion, we will use the IMMUNIChain website to examine how Blockchain can be useful in tracking immunizations between medical providers, selected members and guardians.
 
 Table of Contents
 	- Part 1: Starting and Creating Your Hyperledger Composer Network
 	- Part 2: Creating Assets and Participants
 	- Part 3: Submitting Transactions
-	- Part 4: Production Immunichain
+	- Part 4: Production IMMUNIChain
 	
 Prerequisites
 	- Access to the internet
@@ -54,17 +54,17 @@ Go to ``github.com/grice32/immunichain`` and download the content by clicking on
 
 .. image:: Images/102.png
 
-7. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. Click on **Connect Now** in order to get connected to your Immunichain network
+7. You will then be taken to Your Wallet. Your wallet is basically a quick, seamless connection to multiple connections that you can jump around with. Click on **Connect Now** in order to get connected to your IMMUNIChain network
 
 .. image:: Images/28.png
 
-8. After you have done that, your screen should look like this **after clicking on Model File** on the left
+8. After you have done that, your screen should look like this **after clicking on Model File** on the left. The Model File is where you define the participants, assets, and transactions in your business network.  Feel free to scroll through this file to see the definitions related to IMMUNIChain
 
 .. image:: Images/31.png
 
 **What did you just accomplish?**
 
-You started you the Hyperledger Composer Playground. At first you started with a blank business network, but then you added Immunichain banana file to your business network.
+You started you the Hyperledger Composer Playground. At first you started with a blank business network, but then you added IMMUNIChain banana file to your business network.
 
 
 
@@ -72,11 +72,11 @@ You started you the Hyperledger Composer Playground. At first you started with a
 Part 2: Creating Assets and Participants
 ========================================
 
-1. Now that you have an Immunichain Business Network, **jump over to the Test section** of the Composer Playground. The test area allows you to create assets, participants and submit transactions against your assets and participants. Your screen should look like this: 
+1. Now that you have an IMMUNIChain Business Network, **jump over to the Test section** of the Composer Playground. The test area allows you to create assets, participants and submit transactions against your assets and participants. Your screen should look like this: 
 
 .. image:: Images/99.png
 
-Before we create assets and participants, we need to know what each asset and participants represent 
+Before we create assets and participants, we need to know what each asset and participant represent 
 	 - Guardian is, simply, a parent
 	 - MedProvider is a medical provider, such as a hospital, medical practice or doctor
 	 - Member is an organization that can only view the health record, such as a camp or high school athletics
@@ -189,7 +189,7 @@ That basically says, assign medical provider #1 to Child #1. You are authorizing
 
 .. image:: Images/51.png
 
-7. Back to our auhtorized member transaction, **click on the Childform** on the left. Find the child you assigned a Medical Provider to. **Click on Show All** to view the entire asset of that child. Notice the medical provider you assigned to the child
+7. Back to our authorized member transaction, **click on the Childform** on the left. Find the child you assigned a Medical Provider to. **Click on Show All** to view the entire asset of that child. Notice the medical provider you assigned to the child
 
 .. image:: Images/52.png
 
@@ -197,7 +197,7 @@ That basically says, assign medical provider #1 to Child #1. You are authorizing
 
 .. image:: Images/53.png
 
-9. Now, let’s make an authorized member transaction. Here is my transaction. You can make any type of transaction you want here
+9. Now, let’s make an authorized member transaction.
 
 ::
 
@@ -225,7 +225,7 @@ My transaction says let member #1 have a read only copy of Child #1’s health r
   "childform": "resource:ibm.wsc.immunichain.Childform#cid:1"
  }
 
-12. Your child in the Childform section should look like this: 
+12. Your child in the Childform section should look like this. Notice that member #1 has been removed from the members section of the Childform
 
 .. image:: Images/116.png
 
@@ -243,7 +243,7 @@ My transaction says let member #1 have a read only copy of Child #1’s health r
 
 .. image:: Images/105.png
 
-15. To view your immunization, **go your child in the Childform section**
+15. To view your immunization, **go your child in the Childform section.** In the immunizations section of their record, you should see the immunization that you just added
 
 .. image:: Images/106.png
 
@@ -258,7 +258,7 @@ You submitted transactions against participants within Composer. You now underst
 Part 4: Production Immunichain
 ==============================
 
-1. Open up Google Chrome. Immunichain doesn’t work too well in Firefox. It does work in Firefox, but Google Chrome works the best
+1. Open up Google Chrome. IMMUNIChain doesn’t work too well in Firefox. It does work in Firefox, but Google Chrome works the best
 
 2. Go to ``https://immunichain.zcloud.marist.edu`` - Your screen should look like this: 
 
@@ -338,7 +338,7 @@ Part 4: Production Immunichain
 
 **What did you just accomplish?**
 
-You went to the Immunichain website and create various accounts. You added Member Organizations, Healthcare Providers, Guardians and Children. Then you then added immunizations from the Healthcare Provider account to the child. Then you viewed the health record of the Child from the Member's perspective. 
+You went to the IMMUNIChain website and create various accounts. You added Member Organizations, Healthcare Providers, Guardians and Children. Then you then added immunizations from the Healthcare Provider account to the child. Then you viewed the health record of the Child from the Member's perspective. 
 
 End of Lab!
 ===========
